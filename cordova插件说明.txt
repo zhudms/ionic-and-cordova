@@ -1,0 +1,54 @@
+
+
+
+
+
+
+按正常教程生成文件
+js文件是声明与.ts文件交互的入口
+var exec = require('cordova/exec');
+
+exports.coolMethod = function(arg0, success, error) {
+    exec(success, error, "WPlugin", "coolMethod", [arg0]);
+};
+exports.helloMethod = function(arg0, success, error) {
+    exec(success, error, "WPlugin", "helloMethod", [arg0]);
+};
+
+
+其中可声明多个方法，exec（）方法中，参数：正确执行回调；错误执行回调（能找到对应类找不到对应方法也会回调到这里，但是找不到对应类不会崩溃，但不会回调）；固定的（暂时不知道怎么修改，只修改这里及类名及plugin中source-file字段对应的值并不能正确
+法入口中的action参数，决定代码流程）
+
+
+使用：
+声明
+declare let cordova: any;
+ cordova.plugins.WPlugin.coolMethod('coolMethod',function(msg){},function(msg){
+
+}//此处的coolMethod 为arg0 对应java文件JsonArray的第一个参数
+
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova.plugin.WPlugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<name>WPlugin</name>
+<js-module name="WPlugin" src="www/WPlugin.js">
+<clobbers target="cordova.plugins.WPlugin" />
+</js-module>
+<platform name="android">
+<config-file parent="/*" target="res/xml/config.xml"><feature name="WPlugin">
+<param name="android-package" value="cordova.plugin.WPlugin.WPlugin" />
+</feature>
+</config-file>
+<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+<source-file src="src/android/WPlugin.java" target-dir="src/cordova/plugin/WPlugin/WPlugin" />
+</platform>
+</plugin>
+
+这个plugin文件生成的Android程序有问题，plugin下的java文件包名不对，但程序可正常运行（报错貌似也不影响编译），而且生成platform之后使用cam 命令 ionic run android直接运行在手机上可正常运行，
+如果只修改param name="android-package" 及target-dir字段不可行，会报错并找不到文件
+目前尚未找到解决方案
+
+
+
+
+
+
