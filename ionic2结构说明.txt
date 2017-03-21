@@ -1,0 +1,15 @@
+index.html 我们几乎从不碰这个文件。
+
+config.xml -这包含配置应用程序的名称,和包名,将被用于我们的应用程序安装到一个实际的设备。
+
+src -这就是我们花费我们大部分的时间建立应用程序。它包含结构化程序的源代码。
+
+node_modules -包含了npm包
+
+ package.json 这些都是包构建ionic应用程序所必需的
+
+platforms -这就是平台的具体构建,构建工具和包/库存储。你会发现一个文件夹你正在构建的平台。例如,添加一个平台, ionic platform add android,这将文件夹安卓文件夹添加到文件夹中。
+
+plugins -这就是cordova plugins。cordova插件允许你的应用在移动设备本地功能,e。g访问的媒体存储设备,甚至蓝牙API。
+
+resources -这也包含特定于平台的资源(如图标和启动屏幕)
