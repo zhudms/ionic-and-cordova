@@ -46,7 +46,7 @@ declare let cordova: any;
 这个plugin文件生成的Android程序有问题，plugin下的java文件包名不对，但程序可正常运行（报错貌似也不影响编译），而且生成platform之后使用cam 命令 ionic run android直接运行在手机上可正常运行，
 如果只修改param name="android-package" 及target-dir字段不可行，会报错并找不到文件
 目前尚未找到解决方案
-
+目前方案，对于自动生成的文件不理，将手动添加的文件报名配置正确，自动生成的文件包名有错也不会影响运行
 
 
 
