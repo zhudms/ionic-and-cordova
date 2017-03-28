@@ -1,0 +1,10 @@
+经过，环境按照教程安装后使用build可正常编译，使用build --prod build 会报错，
+各种环境使用最新版本仍没用，使用别人可以build的版本也没用，在保证项目正常的情况下，
+无计可施，重装了系统，然后据别人说，配置了环境变量。搞定其他环境后，build --prod可用。
+
+
+
+
+C:\Program Files\nodejs\node_modules
+
+NODE_PATH
