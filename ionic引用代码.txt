@@ -1,0 +1,21 @@
+  <button ion-button (click)="open()">32321321</button>
+
+declare let cordova: any;
+  open(){
+   
+	alert(1);
+  
+	cordova.plugins.QPlugin.coolMethod('coolMethod',function(msg){
+  
+	alert(2);
+	
+
+	cordova.plugins.QPlugin.helloMethod('hello');
+
+	},function(msg){
+ 
+	alert(3);
+
+	})
+ 
+ 	}

@@ -1,0 +1,4 @@
+ionic2踩坑之兼容android4.3及以下版本
+一个命令就行了
+
+ionic plugin add cordova-plugin-crosswalk-webview --save
