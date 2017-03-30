@@ -1,0 +1,10 @@
+
+--没试过的
+build android总是报如下错误：mergeArmv7DebugResources fail, crunching error 之类，crunching是压缩，还是图片格式问题，可能你的图片png或者jpg自己直接改了后缀名
+
+　　只要在gradle配置里加上这两句：
+
+android {
+aaptOptions.cruncherEnabled = false
+aaptOptions.useNewCruncher = false
+}
