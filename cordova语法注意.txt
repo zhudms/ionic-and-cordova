@@ -1,3 +1,0 @@
-使用startActivityForResult应该使用cordovaPlugin中的方法，不要直接使用activity中的startActivityForResult
-不然需要复写好多方法（没细看）才能接到OnActivityResult回调
- cordova.startActivityForResult(this,intent, requestCode);
