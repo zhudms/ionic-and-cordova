@@ -1,10 +1,4 @@
 
---Ã»ÊÔ¹ıµÄ
-build android×ÜÊÇ±¨ÈçÏÂ´íÎó£ºmergeArmv7DebugResources fail, crunching error Ö®Àà£¬crunchingÊÇÑ¹Ëõ£¬»¹ÊÇÍ¼Æ¬¸ñÊ½ÎÊÌâ£¬¿ÉÄÜÄãµÄÍ¼Æ¬png»òÕßjpg×Ô¼ºÖ±½Ó¸ÄÁËºó×ºÃû
-
-¡¡¡¡Ö»ÒªÔÚgradleÅäÖÃÀï¼ÓÉÏÕâÁ½¾ä£º
-
-android {
-aaptOptions.cruncherEnabled = false
-aaptOptions.useNewCruncher = false
-}
+startActivityForResultä¸å›æ‰é—®é¢˜
+  cordova.startActivityForResult(this, intent, FORCHECK_ALIVE);
+ä¸è¦ä½¿ç”¨Activityçš„startActivityForResult,å¦åˆ™éœ€è¦å¤å†™å¾ˆå¤šæ–¹æ³•
