@@ -1,0 +1,3 @@
+添加C++标准库支持
+TARGETS -> Build Settings -> Linking -> Other Linker Flags 中添加 -lstdc++ 
+ -lstdc++

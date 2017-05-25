@@ -1,0 +1,3 @@
+mac 上 修改了代码需要运行ionic serve 更新代码，否则代码还是原来的代码，重新生成platform都没用
+
+运行ionic serve之后，无需重新生成platform，直接运行即可
