@@ -1,0 +1,7 @@
+F:\Camera\newCamera\cordova-plugin-camera
+
+D:\cordovaLibPlugin\cordovaLibPluginPre
+
+D:\linkFace\LinkFacePlugin_formal
+
+D:\linkFace\OCR\LinkfaceIDOCRPlugin
