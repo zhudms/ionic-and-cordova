@@ -1,0 +1,8 @@
+Cordova plugin中添加相机权限   
+   
+   亲测没用
+   <!-- add permission to use camera -->
+        <preference name="CAMERA_USAGE_DESCRIPTION" default=" " />
+        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+            <string>Kamerazugriff wird benötigt um Aufladecodes zu scannen</string>
+        </config-file>
