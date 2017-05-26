@@ -1,5 +1,6 @@
 cordova 给IOS添加文件
 直接把文件夹拖进去，看看 TARGETS-》Build Phases 中的这5栏，使用对应标签声明即可（library-》framework（当前项目使用的是framework=“true”），Compile Source-》source-file，
+直接把文件夹拖进去（当然要能正常运行），看看 TARGETS-》Build Phases 中的这5栏，使用对应标签声明即可（library-》framework（当前项目使用的是framework=“true”），Compile Source-》source-file，
 Copy Bundle Resources-》resource-file ，其他两个目前没用过）
 
 常见：.h       <header-file
