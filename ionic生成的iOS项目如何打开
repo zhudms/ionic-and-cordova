@@ -1,0 +1,6 @@
+IOS 版本，添加platform之后，无法直接运行
+需要使用Xcode打开项目，
+1   配置developer group
+2   在build Settings 中配置 other linker flags ，添加  -lstdc++    （orcid库需要c++支持 ）
+3   在build Phases 中对kitjson 文件添加    -fno-objc-arc   （KitJson出现的太早了，另，文件中需要修改（1）修改JSONKit.m文件第680行，修改为object_setClass(array, _JKArrayClass);
+（2）修改JSONKit.m文件第931行，修改为object_setClass(dictionary, _JKDictionaryClass);）
