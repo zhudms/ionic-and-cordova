@@ -1,3 +1,6 @@
+ionic cordova plugin add /Users/rongyile/cordovaPlugin/takeIDPic(文件夹路径，包含plugin.xml的路径)
+
+
   <button ion-button (click)="open()">32321321</button>
 
 declare let cordova: any;

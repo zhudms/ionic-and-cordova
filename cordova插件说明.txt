@@ -19,7 +19,7 @@ exports.helloMethod = function(arg0, success, error) {
 其中可声明多个方法，exec（）方法中，参数：正确执行回调；错误执行回调（能找到对应类找不到对应方法也会回调到这里，但是找不到对应类不会崩溃，但不会回调）；固定的（暂时不知道怎么修改，只修改这里及类名及plugin中source-file字段对应的值并不能正确
 法入口中的action参数，决定代码流程）
 
-
+插件创建时的名称就是带唯一.m文件时，文件的名称，继承于CDVPlugin
 使用：
 声明
 declare let cordova: any;
