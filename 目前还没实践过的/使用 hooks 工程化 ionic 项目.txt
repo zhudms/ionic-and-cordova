@@ -1,27 +1,27 @@
-ʹ�� hooks ���̻� ionic ��Ŀ
+使用 hooks 工程化 ionic 项目
 
 https://segmentfault.com/a/1190000004420853
 
-ionic  flashback 2016��02��06�շ���
-�Ƽ�  0 �Ƽ�
-�ղ�  10 �ղأ�1.2k ���
-�������ϣ���� api �ǽ�����ȥ�������ֻ��һ��˼·�����ṩ���롣
+ionic  flashback 2016年02月06日发布
+推荐  0 推荐
+收藏  10 收藏，1.2k 浏览
+如果你是希望看 api 那建议你去这里，本文只是一个思路不会提供代码。
 
-����
-ionic �����ʵ�ܼ򵥣� ionic build һ�¾����ˡ����ǵ�����Ҫ�л� api �ӿڣ�֧���������͵Ȳ���� appid��һ����˵���Ϊ����������qa ����������������ʱ����ܷ��������׳�������֪��˭˵�����õĹ���ʦ��Ӧ��������������ɵ����飬��������֡�
+背景
+ionic 打包其实很简单， ionic build 一下就行了。但是当你需要切换 api 接口，支付宝、推送等插件的 appid（一般来说会分为开发环境，qa 环境，生产环境）时，会很烦并且容易出错。不知道谁说过，好的工程师就应该懒，代码能完成的事情，坚决不动手。
 
-ԭ��
-ionic build ��ʵ������� ionic prepare����ʵ�������� www Ŀ¼���� ionic compile �������衣hooks Ҳ��������֮ǰ����֮��ִ�У��������� before_prepare��after_prepare ��������Ϊ����
+原理
+ionic build 其实就是完成 ionic prepare（其实就是生成 www 目录）和 ionic compile 两个步骤。hooks 也会在他们之前或者之后执行，我这里以 before_prepare、after_prepare 两个勾子为例：
 
-before_prepare: ionic prepare ֮ǰִ�У�Ҳ�������� www Ŀ¼֮ǰ�����ʱ���ʺ�������ѹ����gulp����ɾ������Ҫ�ļ�������sass����gulp �Ĳ��־���Ҳ����ȥ�ֶ�ִ�� gulp build ��release �ˡ�
-after_prepare: ionic prepare ֮��ִ�У�����ط��Ϳ�����һЩ appid ���滻���������ǿ���ͨ�� process.env.CORDOVA_CMDLINE ��ȡ�����������롣���������� ionic build ��dev ���� ionic build ��release ���ҾͿ����õ���ǰ�����Ҫ�Ĳ����� dev ���ؿ������ã�release ���������������á�
-����
-��֪�������ǰ�˹淶����ʱ����û��ʹ�ù� git hooks����������淶�������������֮���� commit ��ʱ�򣬻ᴥ��һ�μ������Ƿ�淶�ĳ���
+before_prepare: ionic prepare 之前执行，也就是生成 www 目录之前。这个时候适合做代码压缩（gulp）、删除不必要文件（比如sass）。gulp 的部分就再也不用去手动执行 gulp build —release 了。
+after_prepare: ionic prepare 之后执行，这个地方就可以做一些 appid 的替换工作，我们可以通过 process.env.CORDOVA_CMDLINE 获取到命令行输入。例如我输入 ionic build —dev 或者 ionic build —release ，我就可以拿到当前打包需要的参数是 dev 本地开发配置，release 线上生产环境配置。
+勾子
+不知道大家在前端规范化的时候有没有使用过 git hooks。帮助代码规范的神器，简而言之就是 commit 的时候，会触发一次检查代码是否规范的程序。
 
-���ĵ� hook ��÷������ƣ�ʹ�� nodejs ����ȡ�������ļ��������ɹ��̡�nodejs �����ļ���صĴ����ҾͲ����ˣ���ʵ����Ϊ node ��������д�����ṩһЩhooks ʵ������Щ���붼�ܰ�����ҿ���ȥѧϰһ�£�
+本文的 hook 与该方法类似，使用 nodejs 来获取参数做文件操作生成工程。nodejs 操作文件相关的代码我就不贴了（其实是因为 node 根本不会写）。提供一些hooks 实例，这些代码都很棒，大家可以去学习一下：
 
-https://gist.github.com/dpogue/4100866���Ԥ��
+https://gist.github.com/dpogue/4100866点击预览
 http://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/
 https://github.com/lanceli/cnodejs-ionic/tree/master/hooks
 
-ϣ�����걾�ģ�����ܶ� ionic �����������һ�����Զ����ĸ��졣�����Ǿ仰���õĳ���Գ��Ӧ����������
+希望看完本文，大家能对 ionic 打包的流程做一个更自动化的改造。还是那句话：好的程序猿，应该懒起来。
