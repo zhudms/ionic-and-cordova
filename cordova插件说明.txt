@@ -4,8 +4,8 @@
 
 
 
-°´Õý³£½Ì³ÌÉú³ÉÎÄ¼þ
-jsÎÄ¼þÊÇÉùÃ÷Óë.tsÎÄ¼þ½»»¥µÄÈë¿Ú
+æŒ‰æ­£å¸¸æ•™ç¨‹ç”Ÿæˆæ–‡ä»¶
+jsæ–‡ä»¶æ˜¯å£°æ˜Žä¸Ž.tsæ–‡ä»¶äº¤äº’çš„å…¥å£
 var exec = require('cordova/exec');
 
 exports.coolMethod = function(arg0, success, error) {
@@ -16,16 +16,16 @@ exports.helloMethod = function(arg0, success, error) {
 };
 
 
-ÆäÖÐ¿ÉÉùÃ÷¶à¸ö·½·¨£¬exec£¨£©·½·¨ÖÐ£¬²ÎÊý£ºÕýÈ·Ö´ÐÐ»Øµ÷£»´íÎóÖ´ÐÐ»Øµ÷£¨ÄÜÕÒµ½¶ÔÓ¦ÀàÕÒ²»µ½¶ÔÓ¦·½·¨Ò²»á»Øµ÷µ½ÕâÀï£¬µ«ÊÇÕÒ²»µ½¶ÔÓ¦Àà²»»á±ÀÀ££¬µ«²»»á»Øµ÷£©£»¹Ì¶¨µÄ£¨ÔÝÊ±²»ÖªµÀÔõÃ´ÐÞ¸Ä£¬Ö»ÐÞ¸ÄÕâÀï¼°ÀàÃû¼°pluginÖÐsource-file×Ö¶Î¶ÔÓ¦µÄÖµ²¢²»ÄÜÕýÈ·
-·¨Èë¿ÚÖÐµÄaction²ÎÊý£¬¾ö¶¨´úÂëÁ÷³Ì£©
+å…¶ä¸­å¯å£°æ˜Žå¤šä¸ªæ–¹æ³•ï¼Œexecï¼ˆï¼‰æ–¹æ³•ä¸­ï¼Œå‚æ•°ï¼šæ­£ç¡®æ‰§è¡Œå›žè°ƒï¼›é”™è¯¯æ‰§è¡Œå›žè°ƒï¼ˆèƒ½æ‰¾åˆ°å¯¹åº”ç±»æ‰¾ä¸åˆ°å¯¹åº”æ–¹æ³•ä¹Ÿä¼šå›žè°ƒåˆ°è¿™é‡Œï¼Œä½†æ˜¯æ‰¾ä¸åˆ°å¯¹åº”ç±»ä¸ä¼šå´©æºƒï¼Œä½†ä¸ä¼šå›žè°ƒï¼‰ï¼›å›ºå®šçš„ï¼ˆæš‚æ—¶ä¸çŸ¥é“æ€Žä¹ˆä¿®æ”¹ï¼Œåªä¿®æ”¹è¿™é‡ŒåŠç±»ååŠpluginä¸­source-fileå­—æ®µå¯¹åº”çš„å€¼å¹¶ä¸èƒ½æ­£ç¡®
+æ³•å…¥å£ä¸­çš„actionå‚æ•°ï¼Œå†³å®šä»£ç æµç¨‹ï¼‰
 
-²å¼þ´´½¨Ê±µÄÃû³Æ¾ÍÊÇ´øÎ¨Ò».mÎÄ¼þÊ±£¬ÎÄ¼þµÄÃû³Æ£¬¼Ì³ÐÓÚCDVPlugin
-Ê¹ÓÃ£º
-ÉùÃ÷
+æ’ä»¶åˆ›å»ºæ—¶çš„åç§°å°±æ˜¯å¸¦å”¯ä¸€.mæ–‡ä»¶æ—¶ï¼Œæ–‡ä»¶çš„åç§°ï¼Œç»§æ‰¿äºŽCDVPlugin
+ä½¿ç”¨ï¼š
+å£°æ˜Ž
 declare let cordova: any;
  cordova.plugins.WPlugin.coolMethod('coolMethod',function(msg){},function(msg){
 
-}//´Ë´¦µÄcoolMethod Îªarg0 ¶ÔÓ¦javaÎÄ¼þJsonArrayµÄµÚÒ»¸ö²ÎÊý
+}//æ­¤å¤„çš„coolMethod ä¸ºarg0 å¯¹åº”javaæ–‡ä»¶JsonArrayçš„ç¬¬ä¸€ä¸ªå‚æ•°
 
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova.plugin.WPlugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
@@ -43,10 +43,10 @@ declare let cordova: any;
 </platform>
 </plugin>
 
-Õâ¸öpluginÎÄ¼þÉú³ÉµÄAndroid³ÌÐòÓÐÎÊÌâ£¬pluginÏÂµÄjavaÎÄ¼þ°üÃû²»¶Ô£¬µ«³ÌÐò¿ÉÕý³£ÔËÐÐ£¨±¨´íÃ²ËÆÒ²²»Ó°Ïì±àÒë£©£¬¶øÇÒÉú³ÉplatformÖ®ºóÊ¹ÓÃcam ÃüÁî ionic run androidÖ±½ÓÔËÐÐÔÚÊÖ»úÉÏ¿ÉÕý³£ÔËÐÐ£¬
-Èç¹ûÖ»ÐÞ¸Äparam name="android-package" ¼°target-dir×Ö¶Î²»¿ÉÐÐ£¬»á±¨´í²¢ÕÒ²»µ½ÎÄ¼þ
-Ä¿Ç°ÉÐÎ´ÕÒµ½½â¾ö·½°¸
-Ä¿Ç°·½°¸£¬¶ÔÓÚ×Ô¶¯Éú³ÉµÄÎÄ¼þ²»Àí£¬½«ÊÖ¶¯Ìí¼ÓµÄÎÄ¼þ±¨ÃûÅäÖÃÕýÈ·£¬×Ô¶¯Éú³ÉµÄÎÄ¼þ°üÃûÓÐ´íÒ²²»»áÓ°ÏìÔËÐÐ
+è¿™ä¸ªpluginæ–‡ä»¶ç”Ÿæˆçš„Androidç¨‹åºæœ‰é—®é¢˜ï¼Œpluginä¸‹çš„javaæ–‡ä»¶åŒ…åä¸å¯¹ï¼Œä½†ç¨‹åºå¯æ­£å¸¸è¿è¡Œï¼ˆæŠ¥é”™è²Œä¼¼ä¹Ÿä¸å½±å“ç¼–è¯‘ï¼‰ï¼Œè€Œä¸”ç”Ÿæˆplatformä¹‹åŽä½¿ç”¨cam å‘½ä»¤ ionic run androidç›´æŽ¥è¿è¡Œåœ¨æ‰‹æœºä¸Šå¯æ­£å¸¸è¿è¡Œï¼Œ
+å¦‚æžœåªä¿®æ”¹param name="android-package" åŠtarget-dirå­—æ®µä¸å¯è¡Œï¼Œä¼šæŠ¥é”™å¹¶æ‰¾ä¸åˆ°æ–‡ä»¶
+ç›®å‰å°šæœªæ‰¾åˆ°è§£å†³æ–¹æ¡ˆ
+ç›®å‰æ–¹æ¡ˆï¼Œå¯¹äºŽè‡ªåŠ¨ç”Ÿæˆçš„æ–‡ä»¶ä¸ç†ï¼Œå°†æ‰‹åŠ¨æ·»åŠ çš„æ–‡ä»¶æŠ¥åé…ç½®æ­£ç¡®ï¼Œè‡ªåŠ¨ç”Ÿæˆçš„æ–‡ä»¶åŒ…åæœ‰é”™ä¹Ÿä¸ä¼šå½±å“è¿è¡Œ
 
 
 

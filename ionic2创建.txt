@@ -1,14 +1,14 @@
-3.1.´´½¨ÏîÄ¿
+3.1.åˆ›å»ºé¡¹ç›®
 
-´ò¿ª Node ÃüÁîĞĞ£¬Ê×ÏÈ cd µ½ÏîÄ¿Ä¿Â¼£¬Ê¹ÓÃ start ÃüÁîÀ´´´½¨Ò»¸öĞÂApp£º
+æ‰“å¼€ Node å‘½ä»¤è¡Œï¼Œé¦–å…ˆ cd åˆ°é¡¹ç›®ç›®å½•ï¼Œä½¿ç”¨ start å‘½ä»¤æ¥åˆ›å»ºä¸€ä¸ªæ–°Appï¼š
 ionic start MyIonic2Project tutorial --v2
-Õâ¸öÃüÁî½«ÏÂÔØÏîÄ¿Ä£°å£¬°²×° npm modules£¬ÉèÖÃ Cordova µÄÏà¹ØĞÅÏ¢¡£
-tutorial ²ÎÊıµÄÒâË¼ÊÇÏÂÔØ tutorial Ä£°åÀ´³õÊ¼»¯ÏîÄ¿£¬Èç¹û²»Ö¸¶¨Õâ¸ö²ÎÊıµÄ»°£¬±ÈÈç£º
+è¿™ä¸ªå‘½ä»¤å°†ä¸‹è½½é¡¹ç›®æ¨¡æ¿ï¼Œå®‰è£… npm modulesï¼Œè®¾ç½® Cordova çš„ç›¸å…³ä¿¡æ¯ã€‚
+tutorial å‚æ•°çš„æ„æ€æ˜¯ä¸‹è½½ tutorial æ¨¡æ¿æ¥åˆå§‹åŒ–é¡¹ç›®ï¼Œå¦‚æœä¸æŒ‡å®šè¿™ä¸ªå‚æ•°çš„è¯ï¼Œæ¯”å¦‚ï¼š
 ionic start MyIonic2Project --v2
-Ä¬ÈÏ»áÊ¹ÓÃ tabs Ä£°å¡£
-µ±È»ÄãÒ²¿ÉÒÔ¼ÓÒ»¸ö blank ²ÎÊı£¬ÕâÑù¾ÍÊÇÒ»¸ö¿ÕÏîÄ¿¡£
---v2 µÄ²ÎÊı±ØĞëÒª¼Ó£¬²»È»»á½¨Á¢ v1.x °æ±¾µÄÏîÄ¿¡£
-Èç¹ûÊ§°Ü£¬ÓĞ¿ÉÄÜ»á³öÏÖÒÔÏÂĞÅÏ¢£º
+é»˜è®¤ä¼šä½¿ç”¨ tabs æ¨¡æ¿ã€‚
+å½“ç„¶ä½ ä¹Ÿå¯ä»¥åŠ ä¸€ä¸ª blank å‚æ•°ï¼Œè¿™æ ·å°±æ˜¯ä¸€ä¸ªç©ºé¡¹ç›®ã€‚
+--v2 çš„å‚æ•°å¿…é¡»è¦åŠ ï¼Œä¸ç„¶ä¼šå»ºç«‹ v1.x ç‰ˆæœ¬çš„é¡¹ç›®ã€‚
+å¦‚æœå¤±è´¥ï¼Œæœ‰å¯èƒ½ä¼šå‡ºç°ä»¥ä¸‹ä¿¡æ¯ï¼š
 Creating Ionic app in folder E:\Workspaces\Ionic2\MyIonic2Project based on tutorial project
 Downloading: https://github.com/driftyco/ionic2-app-base/archive/master.zip
 [=============================] 100% 0.0s
@@ -21,9 +21,9 @@ There was an error with the spawned command: npminstall
 Caught exception:
  undefined
 Mind letting us know? https://github.com/driftyco/ionic-cli/issues
-ÕâËµÃ÷ npm °²×°µÄÊ±ºòÊ§°ÜÁË£¬¿ÉÒÔ cd µ½ÏîÄ¿Ä¿Â¼£¬Ê¹ÓÃÖ®Ç°ÉèÖÃ¹ıµÄ cnpm ÃüÁî£º
+è¿™è¯´æ˜ npm å®‰è£…çš„æ—¶å€™å¤±è´¥äº†ï¼Œå¯ä»¥ cd åˆ°é¡¹ç›®ç›®å½•ï¼Œä½¿ç”¨ä¹‹å‰è®¾ç½®è¿‡çš„ cnpm å‘½ä»¤ï¼š
 E:\Workspaces\Ionic2>cd MyIonic2Project
 E:\Workspaces\Ionic2\MyIonic2Project>cnpm install
-Ö±µ½×îºóÊä³öÀàËÆÒÔÏÂĞÅÏ¢£º
+ç›´åˆ°æœ€åè¾“å‡ºç±»ä¼¼ä»¥ä¸‹ä¿¡æ¯ï¼š
 All packages installed (319 packages installed from npm registry, use 2m, speed 37.49kB/s, json 659(4MB), tarball 1.07MB)
-ËµÃ÷ npm modules °²×°³É¹¦¡£
+è¯´æ˜ npm modules å®‰è£…æˆåŠŸã€‚
