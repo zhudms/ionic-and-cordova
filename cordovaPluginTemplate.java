@@ -30,7 +30,7 @@ public static final int promissionRequestCode = 10;
 
             mCallBack = callbackContext;
             
-            //程序入口
+            //程序入口,但是所有功能都从 startFunction()方法开始
             getPromission();
            
             return true;
@@ -88,7 +88,7 @@ private void requestThePermissions (){
         }
         switch (requestCode) {
             case TAKE_PIC_SEC:
-                startFunction(OCR_OCRSide);
+                startFunction();
                 break;
 
         }
