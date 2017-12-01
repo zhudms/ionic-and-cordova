@@ -53,7 +53,7 @@ public static final int promissionRequestCode = 10;
 
         for (int i = 0; i < PERMISSIONS.length; i++) {
 
-          hasPromission = hasPromission && (checkPermissions(PERMISSIONS[i]));
+          hasPromission = hasPromission && (checkThePermissions(PERMISSIONS[i]));
 
           if (!hasPromission) {
             requestThePermissions();
@@ -75,8 +75,8 @@ public static final int promissionRequestCode = 10;
     
 }
 
-private boolean checkPermissions(String permission){
-    return ContextCompat.checkSelfPermission(cordova.getActivity(), PERMISSIONS[i])== PackageManager.PERMISSION_GRANTED;
+private boolean checkThePermissions(String permission){
+    return ContextCompat.checkSelfPermission(cordova.getActivity(), permission)== PackageManager.PERMISSION_GRANTED;
 }
 
 private void requestThePermissions (){
