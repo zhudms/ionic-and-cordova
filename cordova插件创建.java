@@ -1,7 +1,7 @@
 ����ϸ���ϼ�����
 
 1���Ȱ�װplugman
-npm install-g plugman
+npm install-g plugman//安装 plugman
 
 2������cordova��Ŀ
 plugman create --name #pluginName# --plugin_id #pluginID# --plugin_version #version# [--path ] [--variable NAME=VALUE]
