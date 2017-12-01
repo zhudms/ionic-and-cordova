@@ -1,13 +1,18 @@
 package cordova.ryl.wagesignocr;
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.support.v4.content.ContextCompat;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 
+import org.apache.cordova.PermissionHelper;
+import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import static cordova.ryl.cordovalib.ActivityResultHelper.PERMISSION_DENIED_ERROR;
+import cordova.ryl.cordovalib.FileHelper;
 
 /**
  * This class echoes a string called from JavaScript.
@@ -18,7 +23,7 @@ public static final int promissionRequestCode = 10;
 
 
     private CallbackContext mCallBack;
-    protected final static String[] permissions = {Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE};
+    protected final static String[] PERMISSIONS = {Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE};
 
 
 
