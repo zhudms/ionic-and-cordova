@@ -2,6 +2,7 @@ package cordova.ryl.wagesignocr;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.app.ActivityCompat;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -80,6 +81,7 @@ private boolean checkThePermissions(String permission){
 }
 
 private void requestThePermissions (){
+//     ActivityCompat.requestPermissions(cordova.getActivity(),PERMISSIONS,RC_PROMISSION);
       PermissionHelper.requestPermissions(this, TAKE_PIC_SEC, PERMISSIONS);
 }
 
