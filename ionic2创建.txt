@@ -27,3 +27,5 @@ E:\Workspaces\Ionic2\MyIonic2Project>cnpm install
 直到最后输出类似以下信息：
 All packages installed (319 packages installed from npm registry, use 2m, speed 37.49kB/s, json 659(4MB), tarball 1.07MB)
 说明 npm modules 安装成功。
+
+3.0 添加Android platform ionic cordova run android
